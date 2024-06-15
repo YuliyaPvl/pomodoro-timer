@@ -51,6 +51,9 @@ function startPomodoro() {
   clearInterval(timer);
   timeLeft = 25 * 60;
   updateTimer();
+  if (timer) {
+    startButton.textContent = 'Start';
+  }
 }
   
 function startBreak() {
